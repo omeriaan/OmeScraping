@@ -3,12 +3,19 @@
 ##
 # selenium + phantomJS + beautifulSoupでスクレイピング
 ##
-
+import sys
 from selenium import webdriver
 from bs4 import BeautifulSoup
 
-# phantomjsPath = '/usr/local/bin/phantomjs'
-phantomjsPath = 'PhantomJS/mac/phantomjs'
+phantomjsPath = ''
+
+# Macの場合
+if sys.platform == 'darwin':
+    phantomjsPath = '/usr/local/bin/phantomjs'
+# Windowsの
+elif sys.platform == 'win32':
+    phantomjsPath = 'PhantomJS/windows/phantomjs.exe'
+
 USER_AGENT = 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_1 like Mac OS X) AppleWebKit/602.1.50 ' \
              '(KHTML, like Gecko) Version/10.0 Mobile/14A403 Safari/602.1'
 

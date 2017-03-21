@@ -1,0 +1,16 @@
+.idea
+books.db
+dp.html
+geckodriver.log
+ghostdriver.log
+HelloWorld.py
+index.html
+rss2.xml
+scrape_by_bs4.py
+scrape_by_lxml.py
+scrape_re.py
+scrape_rss.py
+selenium_test.py
+ss.png
+urlopen_encoding.py
+urlopen_meta.py

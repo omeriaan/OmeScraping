@@ -1,0 +1,8 @@
+antigate==1.4.0
+beautifulsoup4==4.5.3
+cssselect==1.0.1
+lxml==3.7.3
+requests==2.13.0
+selenium==3.3.1
+six==1.10.0
+xmltodict==0.10.2

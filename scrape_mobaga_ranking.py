@@ -5,11 +5,12 @@
 ##
 
 from selenium import webdriver
-from selenium.common.exceptions import NoSuchElementException
 from bs4 import BeautifulSoup
 
-phantomjsPath = '/usr/local/bin/phantomjs'
-USER_AGENT = 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/14A403 Safari/602.1'
+# phantomjsPath = '/usr/local/bin/phantomjs'
+phantomjsPath = 'PhantomJS/mac/phantomjs'
+USER_AGENT = 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_1 like Mac OS X) AppleWebKit/602.1.50 ' \
+             '(KHTML, like Gecko) Version/10.0 Mobile/14A403 Safari/602.1'
 
 driver = webdriver.PhantomJS(executable_path=phantomjsPath
                              ,desired_capabilities={'phantomjs.page.settings.userAgent':USER_AGENT})

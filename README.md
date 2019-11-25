@@ -1,0 +1,2 @@
+# OmeScraping
+selenium + phantomJS + beautifulSoupでMobagaランキングをスクレイピング
